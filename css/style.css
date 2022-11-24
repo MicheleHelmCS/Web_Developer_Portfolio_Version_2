@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+html {
+	background-color: black;
+    width: 100%;
+}
+
+body {
+    background-color: orange;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1020px;
+    min-width: 640px;
+}
+
+body > div.slideshow-container > div.caseProblemSlides > h1 {
+    text-align: justify;
+    color: black;
+}
+
+/**************************** Header Styles Section ***********************************/
+/*
+body > header > p 
+body > header > img
+body > header > nav > ul > li
+*/
+
+header {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, san-serif;
+    font-size: 3.5em;
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+}
+
+header > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header > nav > ul > li {
+    list-style: none;
+    background: black;
+    color: black;
+    padding-bottom: 20px;
+    display: inline-flex;
+    padding-right: 89px;
+
+}
+
+
+/**************************** Header Styles Section ***********************************/
+
+
+/**************************** NavBar Styles Section ***********************************/
+nav > ul > li > a {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, san-serif;
+  padding: 10px;
+  font-size: 70%;
+}
+
+nav > ul > li> a:visited, nav > ul > li > a:link {
+  color: white;
+  text-decoration: none;
+  background-color: hsla(0, 0%, 42%, 0.4);
+}
+/**************************** NavBar Styles Section ***********************************/
+
+
+/**************************** Carousel Styles Section ***********************************/
+* {box-sizing: border-box}
+.caseProblemSlides, .codingChallengeSlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/**************************** Carousel Styles Section ***********************************/
+
+/**************************** Table Styles Section ***********************************/
+table {
+  background: linear-gradient(180deg, rgb(190, 215, 255), black);
+  border: solid gray 5px;
+}
+
+th, td {
+  border: solid gray 3px;
+  line-height: 1.4em;
+  padding: 8px;
+}
+
+th {
+  background-color: black;
+  color: rgb(130, 210, 255);
+  font-weight: normal;
+  font-size: 2em;
+}
+
+td {
+  color: white;
+  font-size: 1.5em;
+  vertical-align: top;
+}
+
+/* Column Styles */
+col#firstCol {
+  width: 24%;
+}
+
+col.dataCols {
+  width: 19%;
+}
+
+
+/* Table Header Styles */
+
+thead > tr {
+  height: 60px;
+}
+
+thead > tr:first-of-type > th:first-of-type {
+  font-size: 3em;
+}
+
+thead >  tr:first-of-type > th:not(:first-of-type) {
+  background-color: transparent;
+  color: black;
+}
+/**************************** Table Styles Section ***********************************/
+
+/**************************** Footer Styles Section ***********************************/
+
+address {
+  font-style: normal;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+body > footer > div {
+	margin: 0 auto;
+	width: 12%;
+    display: block;   
+}
+
+body > footer > div > h1, img {
+    justify-items: center;
+}
+
+body > footer > section
+{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+body > footer > section > div.card
+{
+
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card {
+   border: 1px solid rgb(81, 81, 81);
+   border-radius: 20px;
+   box-shadow: inset 0px 0px 3px teal, inset 0px 0px 10px teal, inset 0px 0px 20px teal, 0px 0px 25px 1px black;
+   margin: 15px;
+   height: 175px;
+
+}
+
+div.card header {
+   background-color: rgba(179,244,227,0.3);
+   width: 100%;
+   height: 45px;
+   border-bottom: teal 4px solid;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;   
+}
+
+div.card header h4 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   color: teal;
+   text-align: center;
+   font-size: .7em;
+   line-height: 1em;
+   margin: 5px 0px;
+}
+
+div.card img {
+   display: block;
+   width: 80px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+}
+
+div.card footer {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";   
+   color: teal;
+   
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   font-size: 1.2em;
+
+   font-weight: bold;
+   text-align: center;
+   height: 50px;
+   width: 100%;
+   border-top: 3px solid teal;
+}
+
+body > section > div.card
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    align-items: center;
+}
